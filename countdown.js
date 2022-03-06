@@ -56,7 +56,7 @@ module.exports = function(RED) {
             var remainingTicksMsg = { "payload": 0 };
 
             // only send stop msg if type is not equal "send nothing" option
-            if (node.config.payloadTimerStopType == "nul") {
+            if (node.config.payloadTimerStopType == "null") {
                 node.send([null, remainingTicksMsg]);
             } else {
                 node.send([msg, remainingTicksMsg]);
